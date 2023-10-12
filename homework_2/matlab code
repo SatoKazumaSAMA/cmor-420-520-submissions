@@ -1,0 +1,38 @@
+function times = matvecTimings(matrixSizes)
+    times = zeros(length(matrixSizes), 1);
+    
+    for i = 1:length(matrixSizes)
+        n = matrixSizes(i);
+        matrix = rand(n, n);
+        vector = rand(n, 1);
+        
+        tic;
+        result = matvec(matrix, vector);
+        times(i) = toc;
+    end
+end
+
+
+function result = matvec(matrix, vector)
+    m = size(matrix, 1);
+    n = size(matrix, 2);
+    result = zeros(m, 1);
+    
+    for i = 1:m
+        for j = 1:n
+            result(i) = result(i) + matrix(i, j) * vector(j);
+        end
+    end
+end
+
+matrixSizes = [1000, 2000, 3000, 4000];
+times = matvecTimings(matrixSizes);
+
+
+disp('Times for each matrix size:');
+disp(times);
+Times for each matrix size:
+    0.0199
+    0.0188
+    0.0516
+    0.1234
