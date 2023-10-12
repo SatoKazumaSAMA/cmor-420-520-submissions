@@ -1,0 +1,20 @@
+Timing for m=n=1000
+Average time for matvec with contiguous storage: 0.000997 seconds.
+Average time for matvec with non-contiguous storage: 0.001047 seconds.
+Average time for matvec_transpose with contiguous storage: 0.001098 seconds.
+Average time for matvec_transpose with non-contiguous storage: 0.001197 seconds.
+Timing for m=n=2000
+Average time for matvec with contiguous storage: 0.003793 seconds.
+Average time for matvec with non-contiguous storage: 0.004103 seconds.
+Average time for matvec_transpose with contiguous storage: 0.006585 seconds.
+Average time for matvec_transpose with non-contiguous storage: 0.006587 seconds.
+Timing for m=n=3000
+Average time for matvec with contiguous storage: 0.008186 seconds.
+Average time for matvec with non-contiguous storage: 0.009251 seconds.
+Average time for matvec_transpose with contiguous storage: 0.013971 seconds.
+Average time for matvec_transpose with non-contiguous storage: 0.026736 seconds.
+Timing for m=n=4000
+Average time for matvec with contiguous storage: 0.014676 seconds.
+Average time for matvec with non-contiguous storage: 0.016566 seconds.
+Average time for matvec_transpose with contiguous storage: 0.036236 seconds.
+Average time for matvec_transpose with non-contiguous storage: 0.068446 seconds.
