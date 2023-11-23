@@ -130,27 +130,7 @@ int main() {
     std::cout << "Final value of norm(r) for Sparse Matrix: " << norm_r_sparse << std::endl;
 
 
-//     for (int i=0;i<n;i++){
-//         for (int j=0;j<n;j++){
-//             std::cout<< A_dense(i,j)<<" ";
-//         }
-//         std::cout<< std::endl;
-//     }
-//        std::cout<<std::endl;
 
-//  for (int i=0;i<n;i++){
-//         for (int j=0;j<n;j++){
-//             std::cout<< A_sparse(i,j)<<" ";
-//         }
-//         std::cout<< std::endl;
-//     }
-
-
-//       std::cout<<std::endl;
-
-//  for (int i=0;i<n+2;i++){
-//     std::cout<< row_indices[i]<< " ";
-//  }
         return 0;
 }
 
