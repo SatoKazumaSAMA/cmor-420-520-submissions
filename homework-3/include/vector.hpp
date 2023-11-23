@@ -30,6 +30,12 @@ public:
   }
   
   Vector & operator+=(Vector x);
+
+  double norm() const;
+
+  Vector & mul_nalloc(double x);
+  Vector & add_nalloc(Vector &x);
+  Vector& minus_equal_nalloc(const Vector& x,const Vector &b);
   
 private:  
 
