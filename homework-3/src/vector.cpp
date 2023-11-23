@@ -1,3 +1,4 @@
+
 #include "vector.hpp"
 #include <cmath>
 Vector & Vector::operator+=(Vector x){
@@ -53,7 +54,38 @@ Vector operator*(double x, const Vector & y){
   }
   return out;  
 }
+Vector &Vector::mul_nalloc(double x){
+  for (int i=0; i<_length;i++){
+    _data[i]=_data[i]*x;
+  }
+  return *this;
+}
 
+Vector &Vector::add_nalloc(Vector& x){
+  for (int i=0; i<_length;i++){
+    _data[i]=_data[i]+x(i);
+  }
+  return *this;
+}
+
+Vector &Vector::minus_equal_nalloc(const Vector& x,const Vector &b){
+  for (int i=0;i<_length;i++){
+    _data[i]=b(i)-x(i);
+  }
+  return *this;
+}
+
+Vector operator*(const Vector & x, double y){
+  return y * x;
+}
+
+double Vector::norm() const {
+  double sum = 0.0;
+  for (int i = 0; i < _length; ++i) {
+    sum += _data[i] * _data[i];
+  }
+  return sqrt(sum);
+}
 
 
 
